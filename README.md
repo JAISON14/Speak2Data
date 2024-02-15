@@ -9,3 +9,10 @@ Speak2Data is an innovative tool designed to bridge the gap between natural lang
 - User-Friendly Interface: Provides an interactive web interface built with Streamlit, allowing for easy access and straightforward use.
 - Customizable and Scalable: Open for customization and expansion, Speak2Data can be tailored to fit specific user needs and database schemas.
 
+## Demo Screenshots
+![image](https://github.com/JAISON14/Speak2Data/assets/24632348/a91d0b1e-b40d-4aa4-b779-a4804c4e9990)
+![image](https://github.com/JAISON14/Speak2Data/assets/24632348/fc7222e2-687e-4c5d-9b6a-bc054ae4a7d0)
+
+
+
+
