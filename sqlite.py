@@ -1,21 +1,21 @@
 import sqlite3
 
-## Connectt to SQlite
+## Connect to SQlite
 #connection=sqlite3.connect("student.db")
 connection=sqlite3.connect("university_data1.db") 
 
-# Create a cursor object to insert record,create table
+# Create a cursor object to insert  record, create table
 
 cursor=connection.cursor()
 
-## create the table
+## Create the table
 # table_info="""
 # Create table STUDENT(NAME VARCHAR(25),CLASS VARCHAR(25),
 # SECTION VARCHAR(25),MARKS INT);
 
 # """
 
-## create the table
+## Create the table
 table_info="""
 CREATE TABLE Students (
     StudentID INTEGER PRIMARY KEY,
@@ -55,11 +55,6 @@ cursor.execute(table_info)
 
 ## Insert Some more records
 
-# cursor.execute('''Insert Into STUDENT values('Krish','Data Science','A',90)''')
-# cursor.execute('''Insert Into STUDENT values('Sudhanshu','Data Science','B',100)''')
-# cursor.execute('''Insert Into STUDENT values('Darius','Data Science','A',86)''')
-# cursor.execute('''Insert Into STUDENT values('Vikash','DEVOPS','A',50)''')
-# cursor.execute('''Insert Into STUDENT values('Dipesh','DEVOPS','A',35)''')
 
 cursor.execute('''
     INSERT INTO Students (Name, Age, Gender, Email) VALUES
@@ -95,11 +90,11 @@ INSERT INTO Enrollments (StudentID, CourseID, Grade) VALUES
 
 ## Display ALl the records
 
-print("The isnerted records are")
+print("The inserted records are")
 data=cursor.execute('''Select * from Students''')
 for row in data:
     print(row)
 
-## Commit your changes int he databse
+## Commit your changes in the database
 connection.commit()
 connection.close()
